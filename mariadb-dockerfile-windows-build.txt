@@ -9,7 +9,7 @@ SHELL ["cmd", "/S", "/C"]
 # Download the Build Tools bootstrapper.
 ADD https://aka.ms/vs/16/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
-# Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
+# Install Build Tools with the Microsoft.VisualStudio.Workload.VCTools workload etc.
 RUN C:\TEMP\vs_buildtools.exe --quiet --wait `
  --norestart --nocache --installPath C:\VCTools `
  --add Microsoft.VisualStudio.Workload.VCTools `
